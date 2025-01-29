@@ -10,8 +10,8 @@ class CitaRepository
     ) {
     suspend fun insertarCita(cita: CitaEntity) = citaDao.insertarCita(cita)
 
-    suspend fun obtenerCitasPorDiaYEspecialidad(dia: String, especialidad: String) =
-        citaDao.obtenerCitasPorDiaYEspecialidad(dia, especialidad)
+//    suspend fun obtenerCitasPorDiaYEspecialidad(dia: String, especialidad: String) =
+//        citaDao.obtenerCitasPorDiaYEspecialidad(dia, especialidad)
 
     fun obtenerCitas() = citaDao.obtenerCitas()
 

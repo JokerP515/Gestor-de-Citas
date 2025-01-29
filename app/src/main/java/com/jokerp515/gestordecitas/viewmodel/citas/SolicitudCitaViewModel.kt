@@ -24,11 +24,4 @@ class SolicitudCitaViewModel @Inject constructor(
             citaRepository.insertarCita(cita)
         }
     }
-    //fun editarCita(cita: CitaEntity) = viewModelScope.launch { citaRepository.editarCita(cita) }}
-
-    fun editarCita(cita: CitaEntity) {
-        viewModelScope.launch {
-            citaRepository.modifyById(cita.id, cita.dia, cita.hora)
-        }
-    }
 }
